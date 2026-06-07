@@ -3,13 +3,17 @@
 // Chỉnh sửa dữ liệu ở đây, giao diện sẽ tự cập nhật.
 // =============================================================
 
-// File PDF của từng bài (đã lưu trên CDN Lovable).
-import bai1Pdf from "@/assets/pdfs/bai-1.pdf.asset.json";
-import bai2Pdf from "@/assets/pdfs/bai-2.pdf.asset.json";
-import bai3Pdf from "@/assets/pdfs/bai-3.pdf.asset.json";
-import bai4Pdf from "@/assets/pdfs/bai-4.pdf.asset.json";
-import bai5Pdf from "@/assets/pdfs/bai-5.pdf.asset.json";
-import bai6Pdf from "@/assets/pdfs/bai-6.pdf.asset.json";
+// Link Google Drive của từng bài (file .docx đã upload).
+export const driveLinks: Record<number, string> = {
+  1: "https://drive.google.com/file/d/1a30LBdYBlO1xM7KarUmxJ63FWyRw6u2y/view",
+  2: "https://drive.google.com/file/d/1jZFarYQl5YkicH2lhEaqsl_RoZ4fPE3L/view",
+  3: "https://drive.google.com/file/d/11wQyFBcBI_nvDQAU6dDTkxQ7ouG4BTDd/view",
+  4: "https://drive.google.com/file/d/1ta7_s6M0qSogHRQBNYkXSFt-OAbV3O9y/view",
+  5: "https://drive.google.com/file/d/1AhMjOPZKHz-WfgWjz9DYhUDPvsF9Qpz4/view",
+  6: "https://drive.google.com/file/d/1br_LlG1Za6pWR8xGoo9qUzjU-GwpYOMa/view",
+};
+
+
 
 
 
@@ -74,8 +78,8 @@ export const assignments: Assignment[] = [
       "Một hệ thống lưu trữ gọn gàng, truy xuất nhanh và có bản sao lưu tự động trên đám mây.",
     lesson:
       "Tổ chức dữ liệu tốt ngay từ đầu giúp tiết kiệm rất nhiều thời gian về sau và giảm rủi ro mất mát.",
-    pdfLink: bai1Pdf.url,
-    driveLink: "#",
+    pdfLink: "#",
+    driveLink: driveLinks[1],
   },
   {
     id: 2,
@@ -91,8 +95,8 @@ export const assignments: Assignment[] = [
       "Bộ tiêu chí đánh giá nguồn tin cá nhân và một báo cáo phân tích thông tin theo chủ đề công nghệ.",
     lesson:
       "Không phải mọi thông tin trên Internet đều đúng — tư duy phản biện là kỹ năng sống còn.",
-    pdfLink: bai2Pdf.url,
-    driveLink: "#",
+    pdfLink: "#",
+    driveLink: driveLinks[2],
   },
   {
     id: 3,
@@ -108,8 +112,8 @@ export const assignments: Assignment[] = [
       "Bộ sưu tập prompt mẫu cho học tập, viết lách và lập trình kèm phân tích kết quả.",
     lesson:
       "Chất lượng câu trả lời của AI phụ thuộc rất lớn vào chất lượng câu hỏi của con người.",
-    pdfLink: bai3Pdf.url,
-    driveLink: "#",
+    pdfLink: "#",
+    driveLink: driveLinks[3],
   },
   {
     id: 4,
@@ -125,8 +129,8 @@ export const assignments: Assignment[] = [
       "Một sản phẩm nhóm hoàn chỉnh được thực hiện hoàn toàn qua môi trường làm việc trực tuyến.",
     lesson:
       "Giao tiếp rõ ràng và phân chia trách nhiệm minh bạch là chìa khóa của làm việc nhóm từ xa.",
-    pdfLink: bai4Pdf.url,
-    driveLink: "#",
+    pdfLink: "#",
+    driveLink: driveLinks[4],
   },
   {
     id: 5,
@@ -142,8 +146,8 @@ export const assignments: Assignment[] = [
       "Một bộ sản phẩm số đa phương tiện được tạo với sự hỗ trợ của AI nhưng mang dấu ấn riêng.",
     lesson:
       "AI là công cụ khuếch đại sự sáng tạo, không thay thế ý tưởng và gu thẩm mỹ của con người.",
-    pdfLink: bai5Pdf.url,
-    driveLink: "#",
+    pdfLink: "#",
+    driveLink: driveLinks[5],
   },
   {
     id: 6,
@@ -159,8 +163,8 @@ export const assignments: Assignment[] = [
       "Bộ nguyên tắc sử dụng AI có trách nhiệm áp dụng cho học tập và công việc cá nhân.",
     lesson:
       "Sử dụng AI có trách nhiệm nghĩa là luôn minh bạch, kiểm chứng và tôn trọng quyền của người khác.",
-    pdfLink: bai6Pdf.url,
-    driveLink: "#",
+    pdfLink: "#",
+    driveLink: driveLinks[6],
   },
 ];
 
