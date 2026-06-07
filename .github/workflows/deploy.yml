@@ -28,9 +28,8 @@ jobs:
         with:
           node-version: 20
 
-
       - name: Install dependencies
-        run: npm install # Đổi từ npm ci sang npm install để tự tạo môi trường mới luôn
+        run: npm install --legacy-peer-deps 
 
       - name: Build project
         run: npm run build
