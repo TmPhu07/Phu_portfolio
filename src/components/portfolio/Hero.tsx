@@ -1,13 +1,7 @@
 import { motion } from "framer-motion";
-import { ArrowDown, Cpu, Brain, Gamepad2, Wrench } from "lucide-react";
+import { ArrowDown } from "lucide-react";
 import { profile } from "@/data/portfolioData";
 
-const tagIcons: Record<string, typeof Cpu> = {
-  "Công nghệ": Cpu,
-  AI: Brain,
-  Pokémon: Gamepad2,
-  "Digital Tools": Wrench,
-};
 
 const container = {
   hidden: {},
@@ -75,21 +69,16 @@ export function Hero() {
         </motion.p>
 
         <motion.div variants={item} className="mt-8 flex flex-wrap justify-center gap-3">
-          {profile.tags.map((tag) => {
-            const Icon = tagIcons[tag] ?? Cpu;
-            return (
-              <span
-                key={tag}
-                className="group inline-flex items-center gap-2 rounded-2xl border border-border bg-card px-4 py-2.5 text-sm font-bold text-foreground shadow-soft transition-transform hover:-translate-y-1"
-              >
-                <span className="grid h-7 w-7 place-items-center rounded-xl gradient-ocean text-white">
-                  <Icon className="h-4 w-4" />
-                </span>
-                {tag}
-              </span>
-            );
-          })}
+          {profile.tags.map((tag) => (
+            <span
+              key={tag}
+              className="rounded-2xl border border-border bg-card px-5 py-2.5 text-sm font-bold text-foreground shadow-soft transition-transform hover:-translate-y-1"
+            >
+              {tag}
+            </span>
+          ))}
         </motion.div>
+
 
         <motion.div variants={item} className="mt-10">
           <button
