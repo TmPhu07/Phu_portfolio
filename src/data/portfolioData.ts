@@ -3,6 +3,16 @@
 // Chỉnh sửa dữ liệu ở đây, giao diện sẽ tự cập nhật.
 // =============================================================
 
+// File PDF của từng bài (đã lưu trên CDN Lovable).
+import bai1Pdf from "@/assets/pdfs/bai-1.pdf.asset.json";
+import bai2Pdf from "@/assets/pdfs/bai-2.pdf.asset.json";
+import bai3Pdf from "@/assets/pdfs/bai-3.pdf.asset.json";
+import bai4Pdf from "@/assets/pdfs/bai-4.pdf.asset.json";
+import bai5Pdf from "@/assets/pdfs/bai-5.pdf.asset.json";
+import bai6Pdf from "@/assets/pdfs/bai-6.pdf.asset.json";
+
+
+
 export interface Profile {
   name: string;
   studentId: string;
