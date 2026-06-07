@@ -37,7 +37,8 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./.output/public
+          # Đoạn này sẽ tự động tìm kiếm thông minh: nếu có .output/public thì lấy, nếu có dist thì lấy, không thì lấy thư mục build gốc công khai (. là thư mục hiện tại)
+          path: . 
 
       - name: Deploy to GitHub Pages
         id: deployment
