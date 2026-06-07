@@ -3,13 +3,17 @@
 // Chỉnh sửa dữ liệu ở đây, giao diện sẽ tự cập nhật.
 // =============================================================
 
-// File PDF của từng bài (đã lưu trên CDN Lovable).
-import bai1Pdf from "@/assets/pdfs/bai-1.pdf.asset.json";
-import bai2Pdf from "@/assets/pdfs/bai-2.pdf.asset.json";
-import bai3Pdf from "@/assets/pdfs/bai-3.pdf.asset.json";
-import bai4Pdf from "@/assets/pdfs/bai-4.pdf.asset.json";
-import bai5Pdf from "@/assets/pdfs/bai-5.pdf.asset.json";
-import bai6Pdf from "@/assets/pdfs/bai-6.pdf.asset.json";
+// Link Google Drive của từng bài (file .docx đã upload).
+export const driveLinks: Record<number, string> = {
+  1: "https://drive.google.com/file/d/1a30LBdYBlO1xM7KarUmxJ63FWyRw6u2y/view",
+  2: "https://drive.google.com/file/d/1jZFarYQl5YkicH2lhEaqsl_RoZ4fPE3L/view",
+  3: "https://drive.google.com/file/d/11wQyFBcBI_nvDQAU6dDTkxQ7ouG4BTDd/view",
+  4: "https://drive.google.com/file/d/1ta7_s6M0qSogHRQBNYkXSFt-OAbV3O9y/view",
+  5: "https://drive.google.com/file/d/1AhMjOPZKHz-WfgWjz9DYhUDPvsF9Qpz4/view",
+  6: "https://drive.google.com/file/d/1br_LlG1Za6pWR8xGoo9qUzjU-GwpYOMa/view",
+};
+
+
 
 
 
